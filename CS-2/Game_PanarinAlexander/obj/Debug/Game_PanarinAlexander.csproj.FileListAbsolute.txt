@@ -1,0 +1,21 @@
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe.config
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csprojAssemblyReference.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csproj.CoreCompileInputs.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\С# Level 2\CS-2_Lesson1\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe.config
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csprojAssemblyReference.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csproj.CoreCompileInputs.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe.config
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\bin\Debug\Game_PanarinAlexander.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csprojAssemblyReference.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.csproj.CoreCompileInputs.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\Game_PanarinAlexander\obj\Debug\Game_PanarinAlexander.pdb
