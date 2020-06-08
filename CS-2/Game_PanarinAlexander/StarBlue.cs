@@ -12,7 +12,7 @@ namespace Game_PanarinAlexander
 			Game.Buffer.Graphics.DrawImage(newImage, Pos.X, Pos.Y, Size.Width, Size.Height);
 		}
 
-		public new void Update() // данный метод не будет работать с экземплярами типа BaseObject
+		public override void Update()
 		{
 			Pos.X -= Dir.X;
 			if (Pos.X < 0)

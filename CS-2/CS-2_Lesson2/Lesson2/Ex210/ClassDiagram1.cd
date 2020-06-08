@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ex210.HeroAgillity" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAEAAIAAAEAAAAAEIAEAAAA=</HashCode>
+      <FileName>HeroAgillity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex210.HeroBase" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAgAgAQCAAAAAAAAAAAAAEAEAAAABFIAEAAAA=</HashCode>
+      <FileName>HeroBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex210.HeroIntelligence" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAGIAEkAAA=</HashCode>
+      <FileName>HeroIntelligence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex210.HeroStrength" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAABAAAAAAAAAIAAAEAAAAAEIAAEAAA=</HashCode>
+      <FileName>HeroStrength.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex210.Program" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

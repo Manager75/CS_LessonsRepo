@@ -1,0 +1,11 @@
+C:\Users\Sk\source\repos\LessonsCSharp\SaverLibrary\bin\Debug\SaverLibrary.dll
+C:\Users\Sk\source\repos\LessonsCSharp\SaverLibrary\bin\Debug\SaverLibrary.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\SaverLibrary\obj\Debug\SaverLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\SaverLibrary\obj\Debug\SaverLibrary.dll
+C:\Users\Sk\source\repos\LessonsCSharp\SaverLibrary\obj\Debug\SaverLibrary.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\bin\Debug\SaverLibrary.dll
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\bin\Debug\SaverLibrary.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\obj\Debug\SaverLibrary.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\obj\Debug\SaverLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\obj\Debug\SaverLibrary.dll
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\SaverLibrary\obj\Debug\SaverLibrary.pdb

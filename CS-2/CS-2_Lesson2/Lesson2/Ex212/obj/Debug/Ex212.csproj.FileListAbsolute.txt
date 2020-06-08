@@ -1,0 +1,20 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Debug\Ex212.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Debug\Ex212.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Debug\Ex212.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Debug\Ex212.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Debug\Ex212.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Debug\Ex212.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Debug\SaverLibrary.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Debug\Ex212.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Debug\Ex212.csproj.CopyComplete
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Debug\SaverLibrary.dll
+C:\Users\i\Desktop\Новая папка (2)\Ex212\bin\Debug\Ex212.exe.config
+C:\Users\i\Desktop\Новая папка (2)\Ex212\bin\Debug\Ex212.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex212\bin\Debug\Ex212.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex212\bin\Debug\Ex2121_ SaverLibrary.dll
+C:\Users\i\Desktop\Новая папка (2)\Ex212\bin\Debug\Ex2121_ SaverLibrary.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex212\obj\Debug\Ex212.csprojAssemblyReference.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex212\obj\Debug\Ex212.csproj.CoreCompileInputs.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex212\obj\Debug\Ex212.csproj.CopyComplete
+C:\Users\i\Desktop\Новая папка (2)\Ex212\obj\Debug\Ex212.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex212\obj\Debug\Ex212.pdb

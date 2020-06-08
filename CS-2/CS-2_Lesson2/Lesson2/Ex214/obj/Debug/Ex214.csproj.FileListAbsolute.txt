@@ -1,0 +1,14 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\bin\Debug\Ex214.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\bin\Debug\Ex214.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\bin\Debug\Ex214.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\obj\Debug\Ex214.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\obj\Debug\Ex214.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\obj\Debug\Ex214.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex214\obj\Debug\Ex214.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex214\obj\Debug\Ex214.csprojAssemblyReference.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex214\obj\Debug\Ex214.csproj.CoreCompileInputs.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex214\obj\Debug\Ex214.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex214\obj\Debug\Ex214.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex214\bin\Debug\Ex214.exe.config
+C:\Users\i\Desktop\Новая папка (2)\Ex214\bin\Debug\Ex214.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex214\bin\Debug\Ex214.pdb

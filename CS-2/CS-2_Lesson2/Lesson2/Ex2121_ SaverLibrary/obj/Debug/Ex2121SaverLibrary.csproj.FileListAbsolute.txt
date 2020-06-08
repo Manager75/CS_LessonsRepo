@@ -1,0 +1,6 @@
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\bin\Debug\Ex2121_ SaverLibrary.dll
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\bin\Debug\Ex2121_ SaverLibrary.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\obj\Debug\Ex2121SaverLibrary.csprojAssemblyReference.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\obj\Debug\Ex2121SaverLibrary.csproj.CoreCompileInputs.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\obj\Debug\Ex2121_ SaverLibrary.dll
+C:\Users\i\Desktop\Новая папка (2)\Ex2121_ SaverLibrary\obj\Debug\Ex2121_ SaverLibrary.pdb

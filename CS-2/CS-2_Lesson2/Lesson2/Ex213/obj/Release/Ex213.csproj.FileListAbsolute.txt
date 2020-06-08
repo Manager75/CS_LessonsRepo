@@ -1,0 +1,11 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Ex213.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Ex213.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Ex213.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Release\Ex213.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Release\Ex213.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Release\Ex213.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Release\Ex213.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Newtonsoft.Json.dll
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Newtonsoft.Json.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Release\Newtonsoft.Json.xml
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Release\Ex213.csproj.CopyComplete

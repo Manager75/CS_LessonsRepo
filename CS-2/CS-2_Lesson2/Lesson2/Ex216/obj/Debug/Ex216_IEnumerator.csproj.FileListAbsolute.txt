@@ -1,0 +1,6 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\bin\Debug\Ex216.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\bin\Debug\Ex216.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\bin\Debug\Ex216.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\obj\Debug\Ex216_IEnumerator.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\obj\Debug\Ex216.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex216\obj\Debug\Ex216.pdb

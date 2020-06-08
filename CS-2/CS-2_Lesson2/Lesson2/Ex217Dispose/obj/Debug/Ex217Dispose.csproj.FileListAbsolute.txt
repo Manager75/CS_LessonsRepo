@@ -1,0 +1,7 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\bin\Debug\Ex217Dispose.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\bin\Debug\Ex217Dispose.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\bin\Debug\Ex217Dispose.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\obj\Debug\Ex217Dispose.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\obj\Debug\Ex217Dispose.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\obj\Debug\Ex217Dispose.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex217Dispose\obj\Debug\Ex217Dispose.pdb

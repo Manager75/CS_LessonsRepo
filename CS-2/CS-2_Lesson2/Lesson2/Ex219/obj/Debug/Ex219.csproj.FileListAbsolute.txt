@@ -1,0 +1,6 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\bin\Debug\Ex219.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\bin\Debug\Ex219.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\bin\Debug\Ex219.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\obj\Debug\Ex219.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\obj\Debug\Ex219.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex219\obj\Debug\Ex219.pdb

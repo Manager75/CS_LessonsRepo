@@ -1,0 +1,2 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex210\obj\Release\Ex210.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex210\obj\Release\Ex210.csproj.CoreCompileInputs.cache

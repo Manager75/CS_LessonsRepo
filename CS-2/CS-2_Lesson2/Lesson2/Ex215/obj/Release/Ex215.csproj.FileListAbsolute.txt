@@ -1,0 +1,7 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\bin\Release\Ex215.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\bin\Release\Ex215.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\bin\Release\Ex215.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\obj\Release\Ex215.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\obj\Release\Ex215.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\obj\Release\Ex215.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex215\obj\Release\Ex215.csprojAssemblyReference.cache

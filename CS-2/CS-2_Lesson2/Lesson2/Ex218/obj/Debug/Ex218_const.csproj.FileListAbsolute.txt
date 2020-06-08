@@ -1,0 +1,7 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\bin\Debug\Ex218.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\bin\Debug\Ex218.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\bin\Debug\Ex218.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\obj\Debug\Ex218_const.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\obj\Debug\Ex218_const.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\obj\Debug\Ex218.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex218\obj\Debug\Ex218.pdb

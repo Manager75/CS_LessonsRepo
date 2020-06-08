@@ -1,0 +1,10 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Release\Ex212.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Release\Ex212.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Release\Ex212.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Release\SaverLibrary.dll
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\bin\Release\SaverLibrary.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Release\Ex212.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Release\Ex212.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Release\Ex212.csproj.CopyComplete
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Release\Ex212.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex212\obj\Release\Ex212.pdb

@@ -1,0 +1,21 @@
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Ex213.exe.config
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Ex213.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Ex213.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Debug\Ex213.csproj.CoreCompileInputs.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Debug\Ex213.exe
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Debug\Ex213.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Debug\Ex213.csprojAssemblyReference.cache
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sk\source\repos\LessonsCSharp\Lwsson_2\Ex213\obj\Debug\Ex213.csproj.CopyComplete
+C:\Users\i\Desktop\Новая папка (2)\Ex213\bin\Debug\Ex213.exe.config
+C:\Users\i\Desktop\Новая папка (2)\Ex213\bin\Debug\Ex213.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex213\bin\Debug\Ex213.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex213\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\i\Desktop\Новая папка (2)\Ex213\bin\Debug\Newtonsoft.Json.xml
+C:\Users\i\Desktop\Новая папка (2)\Ex213\obj\Debug\Ex213.csprojAssemblyReference.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex213\obj\Debug\Ex213.csproj.CoreCompileInputs.cache
+C:\Users\i\Desktop\Новая папка (2)\Ex213\obj\Debug\Ex213.csproj.CopyComplete
+C:\Users\i\Desktop\Новая папка (2)\Ex213\obj\Debug\Ex213.exe
+C:\Users\i\Desktop\Новая папка (2)\Ex213\obj\Debug\Ex213.pdb
