@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Deployment.Internal;
 using System.Drawing;
+using System.Reflection;
 
 namespace Game_PanarinAlexander
 {
@@ -8,6 +10,22 @@ namespace Game_PanarinAlexander
     /// </summary>
 	abstract class BaseObject : ICollision
 	{
+        public delegate void Message();
+        public static Action<object, MessageArgs> eventPost; // делегат для ведения журнала о статусе объекта
+        public static event Action<object, MessageArgs> EventPost // событие для журнала о состоянии объекта
+        {
+            add
+            {
+                eventPost += value;
+                Console.WriteLine($"EventPost: {eventPost?.Target?.GetType()} add"); // ToDo разобраться как получить название имени метода исполнителя?
+            }
+            remove
+            {
+                eventPost -= value;
+                Console.WriteLine($"EventPost: {eventPost?.Target?.GetType()} remove");
+            }
+        }
+        protected static int Id;
         protected Point Pos; // координаты
         protected Point Dir; // направление
         protected Size Size; // размер
@@ -19,6 +37,7 @@ namespace Game_PanarinAlexander
                 Pos = pos;
                 Dir = dir;
                 Size = size;
+                Id++;
 
                 GameObjectException innerException = new GameObjectException();
                 if (pos.X < 0 || pos.X > Game.Width)
@@ -63,6 +82,10 @@ namespace Game_PanarinAlexander
 	    public bool Collision(ICollision o) => o.Rect.IntersectsWith(this.Rect);
         public Rectangle Rect => new Rectangle(Pos, Size);
 
+        /// <summary>
+        /// Метод для разлета в разные стороны столкнувшихся объектов
+        /// </summary>
+        /// <param name="_obj"></param>
         public virtual void FlyAway(BaseObject _obj)
         {
             // ToDo доделать варианты правильного разлета Пули и Астероида
@@ -99,6 +122,13 @@ namespace Game_PanarinAlexander
                 _obj.Pos.X = _obj.Rect.Right;
                 _obj.Dir.X = Math.Abs(_obj.Dir.X);
             }
+        }
+
+        public virtual void PublicMessage(string Message)
+        {
+            var msg = new MessageArgs() { Message = Message, Id = Id};
+            //Console.WriteLine($"{this.GetType()} опубликовал: {Message}.");
+            eventPost?.Invoke(this, msg);
         }
     }
 }

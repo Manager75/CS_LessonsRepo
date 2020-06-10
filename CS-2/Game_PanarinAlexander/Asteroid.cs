@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Game_PanarinAlexander
 {
-	class Asteroid : BaseObject, ICloneable
+	class Asteroid : BaseObject, ICloneable, IComparable<Asteroid>
 	{
 		public int Power { get; set; }
 
@@ -29,10 +29,37 @@ namespace Game_PanarinAlexander
 		public object Clone()
 		{
 			// Создаем копию нашего робота
-			Asteroid asteroid = new Asteroid(new Point(Pos.X, Pos.Y), new Point(Dir.X, Dir.Y), new Size(Size.Width, Size.Height));
-			// Не забываем скопировать новому астероиду Power нашего астероида
-			asteroid.Power = Power;
+			Asteroid asteroid = new Asteroid(
+				new Point(Pos.X, Pos.Y),
+				new Point(Dir.X, Dir.Y),
+				new Size(Size.Width, Size.Height))
+			{ Power = Power }; // Не забываем скопировать новому астероиду Power нашего астероида
+			//asteroid.Power = Power;
 			return asteroid;
+		}
+
+		// Реализация Интерфейса без обобщения:
+		//int IComparable.CompareTo(object obj)
+		//{
+		//	if (obj is Asteroid temp)
+		//	{
+		//		if (Power > temp.Power)
+		//			return 1;
+		//		if (Power < temp.Power)
+		//			return -1;
+		//		else
+		//			return 0;
+		//	}
+		//	throw new ArgumentException("Parameter is not а Asteroid!");
+		//}
+
+		int IComparable<Asteroid>.CompareTo(Asteroid obj)
+		{
+			if (Power > obj.Power)
+				return 1;
+			if (Power < obj.Power)
+				return -1;
+			return 0;
 		}
 	}
 }

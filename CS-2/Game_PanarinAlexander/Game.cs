@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using System.Drawing;
 
-
 namespace Game_PanarinAlexander
 {
     /*Чтобы убрать мерцание в игре, будем выводить графику в промежуточный буфер.
@@ -12,11 +11,16 @@ namespace Game_PanarinAlexander
     */
     static class Game
     {
+        static Timer _timer = new Timer() /*{ Interval = 100 }*/;
+        public static Random random = new Random();
+
         static BufferedGraphicsContext _context;
         public static BufferedGraphics Buffer;
         public static BaseObject[,] _objs; // массив объектов - звездного поля
         public static Bullet _bullet;
         public static Asteroid[] _asteroids;
+        private static Ship _ship = new Ship(new Point(10, 400), new Point(5, 5), new Size(10, 10)); // корабль
+        private static FirstAidKit _firstAidKit; // аптечка
 
         // Свойства
         // Ширина и высота игрового поля
@@ -46,33 +50,35 @@ namespace Game_PanarinAlexander
 
             Load(); // создание объектов на звездном поле
 
-            Timer timer = new Timer { Interval = 100 };
-            timer.Start();
-            timer.Tick += Timer_Tick; // Событие Timer Tick - происходит, когда указанный интервал таймера истек и таймер включен.
+            _timer.Start();
+            _timer.Tick += Timer_Tick; // Событие Timer Tick - происходит, когда указанный интервал таймера истек и таймер включен.
+
+            form.KeyDown += Form_KeyDown; // Событие - происходит, когда будет нажата клавиша.
+            
+            Ship.MessageDie += Finish;
+			Ship.MessageFirstAidKit += Help; // вызываю помощь в случае повреждения корабля.
+			BaseObject.EventPost += Log.LogConsole; // журнал событий в консоле.
+            BaseObject.EventPost += Log.LogFile; // журнал событий в файл.
+            BaseObject.EventPost += Log.LogStreamWrite; // журнал событий в поток.
         }
 
-        private static void Timer_Tick(object sender, EventArgs e)
+		private static void Timer_Tick(object sender, EventArgs e)
         {
             Draw();
             Update();
         }
-        /// <summary>
-        /// Отрисовываются все объекты на звездном поле
-        /// </summary>
-        public static void Draw()
+        private static void Form_KeyDown(object sender, KeyEventArgs e)
         {
-            Buffer.Graphics.Clear(Color.Black);
-            
-            foreach (BaseObject obj in _objs) // Объекты - звезды
-                obj.Draw();
-
-            foreach (Asteroid a in _asteroids) // Объекты - астероиды 
-                a.Draw();
-            
-            _bullet.Draw(); // Пуля
-
-            Buffer.Render(); // Когда графический кадр сформирован, выводим его на экран методом Render.
+            if (e.KeyCode == Keys.ControlKey) _bullet = new Bullet(new Point(_ship.Rect.X + 10, _ship.Rect.Y + 4), new Point(10, 0), new Size(4, 1));
+            if (e.KeyCode == Keys.Up) _ship.Up();
+            if (e.KeyCode == Keys.Down) _ship.Down();
         }
+        private static void Help()
+        {
+            if (_firstAidKit == null)
+				_firstAidKit = new FirstAidKit(new Point(random.Next(Width), random.Next(Height)), new Point(random.Next(1,10), random.Next(1,10)), new Size(10, 10));
+        }
+
         /// <summary>
         /// Создаются объекты, которые будут на звездном поле
         /// </summary>
@@ -80,11 +86,9 @@ namespace Game_PanarinAlexander
         {
             int countObjs_1 = 3;
             int countObjs_2 = 10;
-            _objs = new BaseObject[countObjs_1, countObjs_2];
-            _bullet = new Bullet(new Point(0, 200), new Point(5, 0), new Size(4, 1));
-            _asteroids = new Asteroid[3];
-            Random random = new Random();
             int size;
+            _objs = new BaseObject[countObjs_1, countObjs_2];
+            _asteroids = new Asteroid[3];
 
             for (int count = 0; count < countObjs_1; count++)
             {
@@ -110,11 +114,38 @@ namespace Game_PanarinAlexander
             for (var i = 0; i < _asteroids.Length; i++)
             {
                 int r = random.Next(10, 30);
-                _asteroids[i] = new Asteroid(new Point(Width, 200), new Point(-r/3, r), new Size(250, r)); // Проверка обработки собственного Исключения.
-
-                //_asteroids[i] = new Asteroid(new Point(1000, random.Next(0, Game.Height)), new Point(-r / 5, r), new Size(r, r));
+                //_asteroids[i] = new Asteroid(new Point(Width, 200), new Point(-r/3, r), new Size(250, r)); // Проверка разлета в разные стороны при столкновении
+                _asteroids[i] = new Asteroid(new Point(1000, random.Next(0, Game.Height)), new Point(r / 5, r), new Size(r, r));
             }
         }
+
+        /// <summary>
+        /// Отрисовываются все объекты на звездном поле
+        /// </summary>
+        public static void Draw()
+        {
+            Buffer.Graphics.Clear(Color.Black);
+
+            foreach (BaseObject obj in _objs) // Объекты - звезды
+                obj.Draw();
+
+            foreach (Asteroid a in _asteroids) // Объекты - астероиды 
+                a?.Draw();
+
+            _bullet?.Draw(); // Пуля
+
+            _ship?.Draw();
+            if (_ship != null)
+			{
+                Buffer.Graphics.DrawString("Energy:" + _ship.Energy, SystemFonts.DefaultFont, Brushes.White, 0, 0);
+                Buffer.Graphics.DrawString("GamePoints:" + _ship.GamePoints, SystemFonts.DefaultFont, Brushes.White, 0, 15);
+            }
+
+            _firstAidKit?.Draw();
+
+            Buffer.Render(); // Когда графический кадр сформирован, выводим его на экран методом Render.
+        }
+
         /// <summary>
         /// Меняются координаты всех объектов в зависимости от встречи с препятствием (стены)
         /// </summary>
@@ -123,17 +154,66 @@ namespace Game_PanarinAlexander
             foreach (BaseObject obj in _objs)
                 obj.Update();
 
-            foreach (Asteroid a in _asteroids)
+            _bullet?.Update();
+            _firstAidKit?.Update();
+
+            for (var i = 0; i < _asteroids.Length; i++)
             {
-                a.Update();
-                // BaseObject, как предок через наследование, передает Collision
-                if (a.Collision(_bullet)) 
-                { 
+                int r = random.Next(1, 10);
+
+                if (_asteroids[i] == null)
+                    continue;
+
+                _asteroids[i].Update();
+
+                if (_bullet != null && _bullet.Collision(_asteroids[i]))
+                {
                     System.Media.SystemSounds.Hand.Play();
-                    a.FlyAway(_bullet); // при столкновении объекты разлетаются в разные стороны
+                    _ship.GamePoints++;
+                    _asteroids[i] = null;
+                    _bullet = null;
+                    continue;
                 }
+
+                // вызов аптечки происходит после повреждения корабля
+                if (_firstAidKit != null)
+				{
+                    if (_firstAidKit.Collision(_asteroids[i]))
+                        Help();
+                    if (_firstAidKit.Collision(_ship))
+					{
+                        _ship?.EnergyHigh(r);
+                        _firstAidKit = null;
+                    }
+                } 
+
+                if (!_ship.Collision(_asteroids[i]))
+                    continue;
+
+                _ship?.EnergyLow(r);
+                System.Media.SystemSounds.Asterisk.Play();
+                if (_ship.Energy <= 0)
+                    _ship?.Die();
             }
-            _bullet.Update();
+
+            // Пример когда пуля сталкивается с астероидом и они оба меняют направление движения.
+            //foreach (Asteroid a in _asteroids)
+            //{
+            //    a.Update();
+            //    // BaseObject, как предок через наследование, передает Collision
+            //    if (a.Collision(_bullet)) 
+            //    { 
+            //        System.Media.SystemSounds.Hand.Play();
+            //        a.FlyAway(_bullet); // при столкновении объекты разлетаются в разные стороны
+            //    }
+            //}
+        }
+
+        public static void Finish()
+        {
+            _timer.Stop();
+            Buffer.Graphics.DrawString("The End", new Font(FontFamily.GenericSansSerif, 60, FontStyle.Underline), Brushes.White, 200, 100);
+            Buffer.Render();
         }
     }
 }
