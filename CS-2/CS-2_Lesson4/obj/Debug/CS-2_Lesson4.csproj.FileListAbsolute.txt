@@ -1,0 +1,7 @@
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\bin\Debug\CS-2_Lesson4.exe.config
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\bin\Debug\CS-2_Lesson4.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\bin\Debug\CS-2_Lesson4.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\obj\Debug\CS-2_Lesson4.csprojAssemblyReference.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\obj\Debug\CS-2_Lesson4.csproj.CoreCompileInputs.cache
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\obj\Debug\CS-2_Lesson4.exe
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson4\obj\Debug\CS-2_Lesson4.pdb

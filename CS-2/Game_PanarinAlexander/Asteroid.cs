@@ -1,15 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace Game_PanarinAlexander
 {
 	class Asteroid : BaseObject, ICloneable, IComparable<Asteroid>
 	{
+		/// <summary>
+		/// Возникает в момент пересечения с чем-либо
+		/// </summary>
+		public static event Action<string, int> CollisionAsteroid;
+
 		public int Power { get; set; }
 
 		public Asteroid(Point pos, Point dir, Size size) : base(pos, dir, size)
 		{
 			Power = 1;
+			PublicMessage($"{DateTime.Now}: Астероид создан\n");
 		}
 
 		public override void Draw()

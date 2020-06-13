@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Deployment.Internal;
 using System.Drawing;
-using System.Reflection;
 
 namespace Game_PanarinAlexander
 {
