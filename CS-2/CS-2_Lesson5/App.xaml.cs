@@ -18,7 +18,7 @@ namespace CS_2_Lesson5
             // Создаем первое окно
             MainWindow wnd = new MainWindow();
             // Определяем необходимые свойства окна
-            wnd.Title = MainWindow.FindResource("strHelloWPF").ToString();
+            wnd.Title = MainWindow.FindResource("Company").ToString();
 
             //if (e.Args.Length == 1)
             //    MessageBox.Show("Параметр: \n\n" + e.Args[0]);

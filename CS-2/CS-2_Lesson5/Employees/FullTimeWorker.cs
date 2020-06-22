@@ -1,14 +1,13 @@
-﻿
-
-using System;
+﻿using System;
 
 namespace CS_2_Lesson5
 {
-	class FullTimeWorker : Worker
+	public class FullTimeWorker : Worker
 	{
-		public FullTimeWorker(int Id, string SurName, string Name, DateTime BirthDay, int Salary) : base(Id, SurName, Name, BirthDay, Salary)
+		public FullTimeWorker(int Id, int DepartmentId, string SurName, string Name, DateTime BirthDay, double Salary) 
+			: base(Id, DepartmentId, SurName, Name, BirthDay)
 		{
-			Age = Convert.ToInt32(DateTime.Today.Year) - Convert.ToInt32(BirthDay.Year);
+			this.Salary = Salary;
 			AvgMonthSalary = SalaryAccounting;
 		}
 

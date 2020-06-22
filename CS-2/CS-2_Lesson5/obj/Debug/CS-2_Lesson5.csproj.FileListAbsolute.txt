@@ -13,3 +13,5 @@ C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\C
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5.csproj.CoreCompileInputs.cache
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5.exe
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5.pdb
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\WorkerWindow.g.cs
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\WorkerWindow.baml

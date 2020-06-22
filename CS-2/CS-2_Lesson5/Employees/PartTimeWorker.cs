@@ -2,11 +2,12 @@
 
 namespace CS_2_Lesson5
 {
-	class PartTimeWorker : Worker
+	public class PartTimeWorker : Worker
 	{
-		public PartTimeWorker(int Id, string SurName, string Name, DateTime BirthDay, int Salary) : base(Id, SurName, Name, BirthDay, Salary)
+		public PartTimeWorker(int Id, int DepartmentId, string SurName, string Name, DateTime BirthDay, double Salary) 
+			: base(Id, DepartmentId, SurName, Name, BirthDay)
 		{
-			Age = Convert.ToInt32(DateTime.Today.Year) - Convert.ToInt32(BirthDay.Year);
+			this.Salary = Salary;
 			AvgMonthSalary = SalaryAccounting;
 		}
 
