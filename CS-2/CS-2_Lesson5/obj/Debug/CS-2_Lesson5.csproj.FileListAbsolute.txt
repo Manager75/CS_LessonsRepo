@@ -15,3 +15,9 @@ C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\C
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5.pdb
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\WorkerWindow.g.cs
 C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\WorkerWindow.baml
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\bin\Debug\EntityFramework.dll
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\bin\Debug\EntityFramework.xml
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5_Content.g.cs
+C:\Users\Tester\OneDrive\GeekBrains\CS_LessonsRepo\CS-2\CS-2_Lesson5\obj\Debug\CS-2_Lesson5.csproj.CopyComplete

@@ -8,7 +8,10 @@
         mc:Ignorable="d"
 		MinHeight="500"
 		MinWidth="500"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow"
+		Loaded="Window_Loaded"
+		Height="450" 
+		Width="800"
 		Background="{DynamicResource WindowBackgroundBrush}">
 	<Window.Resources>
 		<sys:String x:Key="Company">Panarin Company</sys:String>
@@ -28,6 +31,44 @@
 			<ColumnDefinition Width="250"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
+		<ListView x:Name="listWorkers"
+				  ItemsSource="{Binding}" 
+				  HorizontalAlignment="Left" 
+				  Height="303" 
+				  Margin="8,10,0,0" 
+				  Grid.Row="3"
+				  VerticalAlignment="Top" 
+				  Width="774" Grid.ColumnSpan="2" Grid.RowSpan="2" 
+				  SelectionChanged="listWorkers_SelectionChanged">
+			<ListView.View>
+				<GridView>
+					<GridViewColumn
+						x:Name="surNameColumn"
+						Header="Фамилия" 
+						Width="150" 
+						DisplayMemberBinding="{Binding SurName}"/>
+					<GridViewColumn 
+						x:Name="firstNameColumn"
+						Header="Имя" 
+						Width="100" 
+						DisplayMemberBinding="{Binding FirstName}"/>
+					<GridViewColumn 
+						x:Name="birthDayColumn"
+						Header="Дата рождения" 
+						Width="100" 
+						DisplayMemberBinding="{Binding Birthday}"/>
+					<GridViewColumn 
+						x:Name="salaryColumn"
+						Header="Зарплата" 
+						Width="80" 
+						DisplayMemberBinding="{Binding Salary}"/>
+					<GridViewColumn 
+						Header="Ставка в час" 
+						Width="80" 
+						DisplayMemberBinding="{Binding Path=OneHourSalary, StringFormat={} {0:f2}}"/>
+				</GridView>
+			</ListView.View>
+		</ListView>
 		<TextBlock x:Name="textBlock" 
 				   HorizontalAlignment="Right" 
 				   Margin="0,0,10,10" 
@@ -44,33 +85,19 @@
 				   FontSize="22"
 				   VerticalAlignment="Top" 
 				   Height="30" Width="230"/>
-		<ComboBox x:Name="cbEmployee"
-				   ItemsSource="{Binding Path=workers}"
+		<TextBox x:Name="cbEmployee"
+				   Text="{Binding ElementName=listWorkers,
+                                  Path=SelectedValue.SurName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
 				   ToolTip="Выбирите Сотрудника"
-				   IsEditable="True"
-				   StaysOpenOnEdit="True"
-				   SelectionChanged="cbEmployee_SelectionChanged"
 				   FontSize="22"
 				   Grid.Column="1" 
 				   HorizontalAlignment="Left" 
 				   Height="30" Margin="8,10,0,0" 
 				   VerticalAlignment="Top" 
-				   Width="524">
-			<ComboBox.ItemTemplate>
-				<DataTemplate>
-					<TextBlock>
-						<TextBlock.Text>
-							<MultiBinding StringFormat=" {0} | {1}">
-								<Binding Path="SurName"/>
-								<Binding Path="Name"/>
-							</MultiBinding>
-						</TextBlock.Text>
-					</TextBlock>
-				</DataTemplate>
-			</ComboBox.ItemTemplate>
-		</ComboBox>
+				   Width="524" TextChanged="cbEmployee_TextChanged">
+		</TextBox>
 		<ComboBox x:Name="cbDepartment"
-				 ItemsSource="{Binding Path=departments}"
+				 ItemsSource="{Binding}"
 				 FontSize="22"
 				 Grid.Column="1" 
 				 HorizontalAlignment="Left" 
@@ -83,39 +110,12 @@
 				 SelectionChanged="cbDepartment_SelectionChanged">
 			<ComboBox.ItemTemplate>
 				<DataTemplate>
-					<TextBlock Text="{Binding Path=DepartmentName}"/>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="{Binding DepartmentId}"/>
+					</StackPanel>
 				</DataTemplate>
 			</ComboBox.ItemTemplate>
 		</ComboBox>
-		<ListView x:Name="listWorkers"
-				  ItemsSource="{Binding Path=workers}" 
-				  HorizontalAlignment="Left" 
-				  Height="303" 
-				  Margin="8,10,0,0" 
-				  Grid.Row="3"
-				  VerticalAlignment="Top" 
-				  Width="774" Grid.ColumnSpan="2" Grid.RowSpan="2" 
-				  SelectionChanged="listWorkers_SelectionChanged">
-			<ListView.View>
-				<GridView>
-					<GridViewColumn Header="Фамилия" 
-									Width="150" 
-									DisplayMemberBinding="{Binding Path=SurName}"/>
-					<GridViewColumn Header="Имя" 
-									Width="100" 
-									DisplayMemberBinding="{Binding Path=Name}"/>
-					<GridViewColumn Header="Возраст" 
-									Width="50" 
-									DisplayMemberBinding="{Binding Path=Age}"/>
-					<GridViewColumn Header="Зарплата" 
-									Width="80" 
-									DisplayMemberBinding="{Binding Path=Salary}"/>
-					<GridViewColumn Header="Ставка в час" 
-									Width="80" 
-									DisplayMemberBinding="{Binding Path=OneHourSalary, StringFormat={} {0:f2}}"/>
-				</GridView>
-			</ListView.View>
-		</ListView>
 		<Button x:Name="AddWorker"
 				Content="+"
 				HorizontalAlignment="Left"
@@ -128,6 +128,12 @@
 				HorizontalAlignment="Left"
 				Margin="196,15,0,0"
 				VerticalAlignment="Top"
-				Width="17" RenderTransformOrigin="1.706,0.55"/>
+				Width="17" RenderTransformOrigin="1.706,0.55" Click="DelWorker_Click"/>
+		<Button x:Name="EditWorker"
+				Content="Edit"
+				HorizontalAlignment="Left"
+				Margin="213,15,0,0"
+				VerticalAlignment="Top"
+				Width="27" RenderTransformOrigin="1.706,0.55" Click="EditWorker_Click"/>
 	</Grid>
 </Window>
