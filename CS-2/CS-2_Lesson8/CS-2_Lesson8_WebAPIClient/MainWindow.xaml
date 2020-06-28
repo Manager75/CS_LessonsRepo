@@ -1,0 +1,143 @@
+﻿<Window x:Class="CS_2_Lesson8_WebAPIClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:CS_2_Lesson8_WebAPIClient" 
+		mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+		Background="{DynamicResource WindowBackgroundBrush}">
+	<Window.Resources>
+		<sys:String x:Key="Company">Panarin Company</sys:String>
+		<LinearGradientBrush x:Key="WindowBackgroundBrush">
+			<GradientStop Offset="0" Color="Silver"/>
+			<GradientStop Offset="1" Color="AliceBlue"/>
+		</LinearGradientBrush>
+	</Window.Resources>
+	<Grid Name="MainGrid">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="50"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="250"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<ListView x:Name="listWorkers"
+				  ItemsSource="{Binding}" 
+				  HorizontalAlignment="Left" 
+				  Height="303" 
+				  Margin="8,10,0,0" 
+				  Grid.Row="3"
+				  VerticalAlignment="Top" 
+				  Width="774" Grid.ColumnSpan="2" Grid.RowSpan="2" 
+				  SelectionChanged="listWorkers_SelectionChanged">
+			<ListView.View>
+				<GridView>
+					<GridViewColumn 
+						Header="Id" 
+						Width="50" 
+						DisplayMemberBinding="{Binding Id}"/>
+					<GridViewColumn 
+						Header="DepartmentId" 
+						Width="80" 
+						DisplayMemberBinding="{Binding DepartmentId}"/>
+					<GridViewColumn
+						x:Name="surNameColumn"
+						Header="Фамилия" 
+						Width="150" 
+						DisplayMemberBinding="{Binding SurName}"/>
+					<GridViewColumn 
+						x:Name="firstNameColumn"
+						Header="Имя" 
+						Width="100" 
+						DisplayMemberBinding="{Binding FirstName}"/>
+					<GridViewColumn 
+						x:Name="birthDayColumn"
+						Header="Дата рождения" 
+						Width="100" 
+						DisplayMemberBinding="{Binding Birthday}"/>
+					<GridViewColumn 
+						x:Name="salaryColumn"
+						Header="Зарплата" 
+						Width="80" 
+						DisplayMemberBinding="{Binding Salary}"/>
+				</GridView>
+			</ListView.View>
+		</ListView>
+		<TextBlock x:Name="textBlock" 
+				   HorizontalAlignment="Right" 
+				   Margin="0,0,10,10" 
+				   TextWrapping="Wrap" 
+				   Text="Фамилия И.О.: "
+				   FontSize="22"
+				   VerticalAlignment="Bottom" Height="30" Width="230"/>
+		<TextBlock x:Name="textBlock4"
+				   HorizontalAlignment="Left"
+				   Margin="10,10,0,0" 
+				   Grid.Row="1" 
+				   TextWrapping="Wrap"
+				   Text="Департамент: " 
+				   FontSize="22"
+				   VerticalAlignment="Top" 
+				   Height="30" Width="230"/>
+		<TextBox x:Name="cbEmployee"
+				   Text="{Binding ElementName=listWorkers,
+                                  Path=SelectedValue.SurName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+				   ToolTip="Выбирите Сотрудника"
+				   FontSize="22"
+				   Grid.Column="1" 
+				   HorizontalAlignment="Left" 
+				   Height="30" Margin="8,10,0,0" 
+				   VerticalAlignment="Top" 
+				   Width="524" TextChanged="cbEmployee_TextChanged" IsEnabled="False">
+		</TextBox>
+		<ComboBox x:Name="cbDepartment"
+				 ItemsSource="{Binding}"
+				 FontSize="22"
+				 Grid.Column="1" 
+				 HorizontalAlignment="Left" 
+				 Height="30" 
+				 Margin="6,10,0,0"
+				 Grid.Row="1" 
+				 VerticalAlignment="Top" 
+				 Width="524"
+				 ToolTip="Выбирите Департамент"
+				 SelectionChanged="cbDepartment_SelectionChanged" IsEnabled="False">
+			<ComboBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="{Binding DepartmentId}"/>
+					</StackPanel>
+				</DataTemplate>
+			</ComboBox.ItemTemplate>
+		</ComboBox>
+		<Button x:Name="AddWorker"
+				Content="+"
+				HorizontalAlignment="Left"
+				Margin="179,15,0,0"
+				VerticalAlignment="Top"
+				Width="17" RenderTransformOrigin="1.118,0.4" 
+				Click="AddWorker_Click" IsEnabled="False"/>
+		<Button x:Name="DelWorker"
+				Content="-"
+				HorizontalAlignment="Left"
+				Margin="196,15,0,0"
+				VerticalAlignment="Top"
+				Width="17" RenderTransformOrigin="1.706,0.55" Click="DelWorker_Click" IsEnabled="False"/>
+		<Button x:Name="EditWorker"
+				Content="Edit"
+				HorizontalAlignment="Left"
+				Margin="213,15,0,0"
+				VerticalAlignment="Top"
+				Width="27" RenderTransformOrigin="1.706,0.55" Click="EditWorker_Click" IsEnabled="False"/>
+		<Button x:Name="LoadWorkers"
+				Content="Load"
+				HorizontalAlignment="Left"
+				Margin="179,15,0,0"
+				VerticalAlignment="Top"
+				Width="34" RenderTransformOrigin="1.706,0.55" Click="LoadWorkers_Click" Grid.Row="1"/>
+	</Grid>
+</Window>
